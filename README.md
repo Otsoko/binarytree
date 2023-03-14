@@ -1,2 +1,2 @@
-# binarytree
-Binary Tree implementation on C
+# Binary tree
+Binary tree implementation on C
