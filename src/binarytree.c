@@ -47,15 +47,18 @@ node_t *bt_create_node(binary_tree_t *tree, void *data) {
 
 node_t *bt_insert_root(binary_tree_t *tree, void *data) {
     tree->root = bt_create_node(tree, data);
+    tree->length++;
     return tree->root;
 }
 
 node_t *bt_insert_left(binary_tree_t *tree, node_t *node, void *data) {
     node->left = bt_create_node(tree, data);
+    tree->length++;
     return node->left;
 }
 
 node_t *bt_insert_right(binary_tree_t *tree, node_t *node, void *data) {
     node->right = bt_create_node(tree, data);
+    tree->length++;
     return node->right;
 }

@@ -51,6 +51,7 @@ int main(int argc, char const *argv[]) {
     data.character = 'l';
 
     bt_insert_left(&bt, node, &data);
+    printf("Size: %ld\n\n", bt.length);
 
     printf("Tree view\n");
     btPrint(bt.root);
@@ -101,7 +102,7 @@ void postorderTraversal(node_t *node) {
 
 void btPrintTraversal(node_t *node, int space) {
     data_t *data = NULL;
-    
+
     if (node == NULL)
         return;
 
