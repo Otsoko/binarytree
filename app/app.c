@@ -15,7 +15,7 @@ void postorderTraversal(node_t *node);
 void btPrintTraversal(node_t *node, int space);
 void btPrint(node_t *root);
 
-int main(int argc, char const *argv[]) {
+int main(void) {
     binary_tree_t bt;
     data_t        data;
     node_t       *node;

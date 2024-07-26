@@ -1,5 +1,4 @@
-#ifndef __BINARYTREE_H__
-#define __BINARYTREE_H__
+#pragma once
 
 #include <stdlib.h>
 
@@ -22,5 +21,3 @@ node_t *bt_create_node(binary_tree_t *tree, void *data);
 node_t *bt_insert_root(binary_tree_t *tree, void *data);
 node_t *bt_insert_left(binary_tree_t *tree, node_t *node, void *data);
 node_t *bt_insert_right(binary_tree_t *tree, node_t *node, void *data);
-
-#endif // __BINARYTREE_H__
